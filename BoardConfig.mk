@@ -123,6 +123,10 @@ BOARD_USES_VENDOR_DLKMIMAGE := true
 
 BOARD_USES_METADATA_PARTITION := true
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6886
 BOARD_HAS_MTK_HARDWARE := true
