@@ -64,6 +64,24 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6886 \
+    fstab.mt6886.vendor_ramdisk \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6886.rc \
+    init.mt6886.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    init_conninfra.rc \
+    init.stnfc.rc \
+    init.insmod.sh \
+    ueventd.mt6886.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 34
 
