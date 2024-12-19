@@ -22,5 +22,9 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6886
 BOARD_HAS_MTK_HARDWARE := true
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 # Inherit the proprietary files
 include vendor/nothing/pacman/BoardConfigVendor.mk
