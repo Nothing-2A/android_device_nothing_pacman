@@ -54,6 +54,10 @@ PRODUCT_PACKAGES += \
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 34
 
